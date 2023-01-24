@@ -30,8 +30,6 @@ function loadPlanets(){
     .on('end', () => {
         Promise.allSettled(arrayOfPromises)
         .then(() => {
-          const countPlanetsFound = arrayOfPromises.length
-        console.log(`${countPlanetsFound} habitable planets found!`);
         })
         resolve()
     });
